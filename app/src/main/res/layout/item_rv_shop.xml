@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/store_image"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/store"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_toRightOf="@+id/store_image"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="店铺名称"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/sell_number"
+            android:layout_toLeftOf="@+id/distance"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="销量 30"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="距离 300米"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/shop_image_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

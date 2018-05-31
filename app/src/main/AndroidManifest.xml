@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.lijiang.happydispatch">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0fc96776c6e3a3ef4cb05e5ce3820383"/>
+
+        <activity android:name=".ui.activity.welcome.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity">
+        </activity>
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="扫描二维码"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".ui.activity.homePage.search.SearchActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.search.CommoditySearchActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.commodity.CommodityDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.store.StoreDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.commodity.CommentActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.GuessLikeActivity">
+        </activity>
+        <activity android:name=".ui.activity.homePage.TodayPreferActivity">
+        </activity>
+        <activity android:name=".ui.activity.shopBus.CloseAccountActivity">
+        </activity>
+        <activity android:name=".ui.activity.login.LoginActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.setting.SettingActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.PersonActivity">
+        </activity>
+        <activity android:name=".ui.activity.shopBus.CollectMoneyActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.AboutUsActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.AddressManageActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.InterestedActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.EditPersonActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.AddAddressActivity">
+        </activity>
+        <activity android:name=".ui.activity.mine.person.MyOrderFormActivity">
+        </activity>
+    </application>
+
+</manifest>
